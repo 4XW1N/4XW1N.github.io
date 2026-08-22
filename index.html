@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PhoneController — Your phone as an Xbox 360 controller</title>
+<meta name="description" content="PhoneController turns your Android phone into a wireless Xbox 360 controller for Windows over local Wi-Fi. Open source.">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:-apple-system,'Segoe UI',Roboto,sans-serif; background:#171A21; color:#C7D5E0;
+         min-height:100vh; display:flex; flex-direction:column; align-items:center; padding:60px 24px; }
+  .badge { background:#66c0f422; color:#66C0F4; border:1px solid #66c0f455; padding:6px 16px;
+           border-radius:20px; font-size:14px; letter-spacing:1px; }
+  h1 { color:#fff; font-size:clamp(40px,7vw,72px); margin:24px 0 8px; }
+  h1 span { color:#66C0F4; }
+  .tag { font-size:clamp(16px,2.5vw,22px); color:#8F98A0; max-width:640px; text-align:center; }
+  .cta { margin-top:36px; display:flex; gap:16px; flex-wrap:wrap; justify-content:center; }
+  .btn { padding:14px 32px; border-radius:8px; font-size:17px; font-weight:600; text-decoration:none; transition:.15s; }
+  .btn.primary { background:#66C0F4; color:#10151b; }
+  .btn.primary:hover { background:#8ed2f7; }
+  .btn.ghost { border:1px solid #3d4450; color:#C7D5E0; }
+  .btn.ghost:hover { border-color:#66C0F4; color:#66C0F4; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:18px; margin-top:64px; max-width:900px; width:100%; }
+  .card { background:#1B2838; border-radius:12px; padding:26px; }
+  .card h3 { color:#66C0F4; margin-bottom:10px; font-size:18px; }
+  .card p { font-size:15px; line-height:1.55; color:#A3B2C2; }
+  footer { margin-top:70px; font-size:14px; color:#5c6672; text-align:center; line-height:2; }
+  footer a { color:#66C0F4; }
+</style>
+</head>
+<body>
+  <div class="badge">OPEN SOURCE · FREE</div>
+  <h1>Phone<span>Controller</span></h1>
+  <p class="tag">Turn your Android phone into a wireless Xbox 360 controller for Windows — over local Wi-Fi.</p>
+
+  <div class="cta">
+    <a class="btn primary" href="https://github.com/4XW1N/PhoneController">View Source</a>
+    <a class="btn ghost" href="https://github.com/4XW1N/PhoneController/releases">Download</a>
+    <a class="btn ghost" href="https://4xw1n.github.io/phonecontroller-privacy/">Privacy Policy</a>
+  </div>
+
+  <div class="grid">
+    <div class="card"><h3>Real XInput Gamepad</h3><p>Games see an actual "Xbox 360 Controller for Windows" via ViGEmBus — not keyboard emulation.</p></div>
+    <div class="card"><h3>Floating Joysticks</h3><p>Stick bases appear wherever your thumbs land. Both sticks work simultaneously.</p></div>
+    <div class="card"><h3>Auto-Discovery</h3><p>The app finds your PC automatically on the same Wi-Fi. No IP addresses needed.</p></div>
+    <div class="card"><h3>Full Button Set</h3><p>A, B, X, Y, LB, RB, LT, RT, Start, Select — plus remapping to keys or mouse.</p></div>
+    <div class="card"><h3>No Data Collected</h3><p>No accounts, no analytics, no ads. Input stays on your own network.</p></div>
+    <div class="card"><h3>2-Minute Setup</h3><p>Install ViGEmBus, run the Python server, tap your PC in the app. Done.</p></div>
+  </div>
+
+  <footer>
+    © 2026 4XW1N · <a href="https://github.com/4XW1N/PhoneController">GitHub</a> · <a href="https://4xw1n.github.io/phonecontroller-privacy/">Privacy</a>
+  </footer>
+</body>
+</html>
